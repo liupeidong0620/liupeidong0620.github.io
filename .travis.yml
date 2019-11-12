@@ -4,7 +4,13 @@ language: go
 
 git:
   depth: 1
+# 构建的分支
+branches:
+  only:
+    - source
 
+before_install:
+  - git clone https://github.com/olOwOlo/hugo-theme-even.git themes/even
 install: go get -v github.com/spf13/hugo
 
 script:

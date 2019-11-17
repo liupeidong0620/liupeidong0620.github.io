@@ -2,6 +2,9 @@ sudo: false
 
 language: go
 
+go:
+  - 1.13.4
+
 git:
   depth: 1
 # 构建的分支
@@ -10,8 +13,8 @@ branches:
     - source
 
 before_install:
-  - git clone https://github.com/olOwOlo/hugo-theme-even.git themes/even
-install: go get -v github.com/spf13/hugo
+  - git clone https://github.com/olOwOlo/hugo-theme-even.git
+install: go get -v github.com/spf13/hugo@v.0.59.1
 
 script:
   - hugo

@@ -16,7 +16,7 @@ before_install:
   - git clone https://github.com/olOwOlo/hugo-theme-even.git themes/even
 install:
   - export GO111MODULE=on 
-  - go get -v github.com/gohugoio/hugo@v.0.59.1
+  - go get -v github.com/gohugoio/hugo@v0.59.1
 script:
   - hugo
 

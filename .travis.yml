@@ -14,7 +14,7 @@ branches:
 
 before_install:
   - git clone https://github.com/olOwOlo/hugo-theme-even.git
-install: go get -v github.com/gohugoio/hugo
+install: get -v github.com/spf13/hugo
 
 script:
   - hugo
